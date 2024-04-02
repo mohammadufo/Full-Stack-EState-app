@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <p className="bg-primary p-10">I love Alaa 💕</p>
-      <span className="bg-yellow-500">hiii</span>
+      <span className="bg-yellow-500">hiii Alaa</span>
       <Button variant="contained">Hello world</Button>
     </>
   )
