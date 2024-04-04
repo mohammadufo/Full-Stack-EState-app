@@ -1,15 +1,20 @@
-import { useState } from 'react'
-import { Button } from '@mui/material'
+import { ThemeProvider } from '@mui/material'
+import Navbar from './components/navbar'
+import { theme } from './utils/mui'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <p className="bg-primary p-10">I love Alaa 💕</p>
-      <span className="bg-yellow-500">hiii Alaa</span>
-      <Button variant="contained">Hello world</Button>
-    </>
+    <ThemeProvider theme={theme}>
+      <div className="w-full lg:container-lg px-4">
+        <Navbar />
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <p className="">I love Alaa 💕</p>
+      </div>
+    </ThemeProvider>
   )
 }
 
