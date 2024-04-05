@@ -1,18 +1,17 @@
 import { ThemeProvider } from '@mui/material'
 import Navbar from './components/navbar'
 import { theme } from './utils/mui'
+import HomePage from './routes/HomePage'
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="w-full lg:container-lg px-4">
+      <div className="w-full">
         <Navbar />
+      </div>
 
-        <br />
-        <br />
-        <br />
-        <br />
-        <p className="">I love Alaa 💕</p>
+      <div>
+        <HomePage />
       </div>
     </ThemeProvider>
   )

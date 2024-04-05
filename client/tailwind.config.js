@@ -16,13 +16,9 @@ module.exports = {
   container: '#root',
   theme: {
     screens: {
-      xs: '360px',
-      sm: '480px',
-      md: '768px',
-      lg: '992px',
-      xl: '1024px',
-      '2xl': '1200px',
-      '3xl': '1300px',
+      sm: '738px',
+      md: '1024px',
+      lg: '1366px',
     },
     fontSize: {
       xxs: '.75rem',
