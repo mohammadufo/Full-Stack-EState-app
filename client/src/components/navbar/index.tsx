@@ -28,7 +28,7 @@ const Navbar = () => {
           Agents
         </a>
       </div>
-      <div className="flex items-center justify-end w-[40%] px-4 md:bg-[#fcf5f3] h-full">
+      <div className="flex items-center justify-end w-[40%] px-4 md:bg-bg h-full">
         <div className="hidden w-full sm:flex items-center justify-end h-full gap-2">
           <Button color="primary" variant="text">
             Sign In

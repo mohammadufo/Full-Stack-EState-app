@@ -3,6 +3,7 @@ const plugin = require('tailwindcss/plugin')
 
 const customColors = {
   primary: '#00b96b',
+  bg: '#fcf5f3',
 }
 
 module.exports = {

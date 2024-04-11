@@ -41,3 +41,7 @@ a {
   width: 100%;
   opacity: 1;
 }
+
+.home {
+  height: calc(100vh - 6rem);
+}
