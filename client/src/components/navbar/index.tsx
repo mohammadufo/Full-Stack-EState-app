@@ -2,6 +2,7 @@ import { Button } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
@@ -11,31 +12,37 @@ const Navbar = () => {
       <div className="flex gap-4 items-center w-[60%]">
         <div className="flex items-center gap-2">
           <img src="/logo.png" alt="" className="w-8 object-cover" />
-          <span className="font-bold text-[20px] sm:hidden md:block">
-            UFOEstate
-          </span>
+          <Link to="/">
+            <span className="font-bold text-[20px] sm:hidden md:block">
+              UFOEstate
+            </span>
+          </Link>
         </div>
-        <a href="" className="menu-item hidden sm:block">
+        <Link to="/" className="menu-item hidden sm:block">
           Home
-        </a>
-        <a href="" className="menu-item hidden sm:block">
+        </Link>
+        <Link to="" className="menu-item hidden sm:block">
           About
-        </a>
-        <a href="" className="menu-item hidden sm:block">
+        </Link>
+        <Link to="" className="menu-item hidden sm:block">
           Contacts
-        </a>
-        <a href="" className="menu-item hidden sm:block">
+        </Link>
+        <Link to="" className="menu-item hidden sm:block">
           Agents
-        </a>
+        </Link>
       </div>
       <div className="flex items-center justify-end w-[40%] px-4 md:bg-bg h-full">
         <div className="hidden w-full sm:flex items-center justify-end h-full gap-2">
-          <Button color="primary" variant="text">
-            Sign In
-          </Button>
-          <Button color="primary" variant="contained">
-            Sign Up
-          </Button>
+          <Link to="login">
+            <Button color="primary" variant="text">
+              Sign In
+            </Button>
+          </Link>
+          <Link to="register">
+            <Button color="primary" variant="contained">
+              Sign Up
+            </Button>
+          </Link>
         </div>
 
         <div

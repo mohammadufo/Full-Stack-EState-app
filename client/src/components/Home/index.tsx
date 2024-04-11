@@ -62,7 +62,11 @@ const Home = () => {
         </div>
       </div>
       <div className="hidden md:flex h-full w-[40%] bg-bg  items-center relative">
-        <img src="/bg.png" alt="" className="w-[115%] absolute right-0" />
+        <img
+          src="/bg.png"
+          alt=""
+          className="md:w-[105%] lg:w-[115%] absolute right-0"
+        />
       </div>
     </div>
   )
